@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+:root {
+  --ring: 0 0% 100%;
+}
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+.card {
+  @apply bg-white/80 backdrop-blur border border-slate-200 rounded-2xl shadow-sm;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg bg-indigo-600 px-4 py-2 text-white font-medium shadow-sm hover:bg-indigo-700 transition disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.input {
+  @apply w-full rounded-lg border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition;
+}
+
+.faq-item {
+  @apply bg-white border border-slate-200 rounded-xl p-4 hover:shadow transition;
+}
+
+.skeleton {
+  @apply animate-pulse bg-slate-200 rounded;
+}
+
+
